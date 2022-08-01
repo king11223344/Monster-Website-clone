@@ -1,0 +1,474 @@
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:focus {
+  outline: none;
+}
+* {
+  margin: 0;
+  outline: none;
+  padding: 0;
+  font-weight: 400;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.body{
+  display: grid;
+  place-items: center;
+}
+a {
+  color: #5d4da8;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header{
+  background-color: white
+}
+.header-container {
+  z-index: 1;
+  top: 30px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:white;
+}
+.monster-logo {
+  align-items: center;
+}
+.monster-logo img {
+  width: 135px;
+  height: 36px;
+  margin-left: 110%;
+}
+li {
+  display: inline;
+}
+
+.main-nav-link {
+  text-transform: uppercase;
+  padding: 10px 20px 8px;
+
+  text-decoration: none;
+  /* position: fixed; */
+  color: #3c3c3c;
+  font-family: "Poppins", sans-serif;
+}
+.premium {
+  text-transform: uppercase;
+  /* display: block; */
+  padding: 10px 20px 8px;
+  /* line-height: 54px; */
+  text-decoration: none;
+  position: relative;
+  background: rgba(252, 184, 39, 0.3);
+  position: relative;
+  border-radius: 5px;
+  color: #f7821b;
+}
+.premium::hover {
+  background: goldenrod;
+  color: #fff;
+}
+.nav-wrapper {
+  transition: 0.3s linear;
+}
+nav {
+  padding-left: 1px;
+  padding-right: 10%;
+}
+.secondary {
+  color: #3c3c3c;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #3c3c3c;
+}
+
+#toggle:checked ~ label > span:nth-child(2) {
+  background: #fff;
+  /* transform: rotateZ(-45deg); */
+  width: 30px;
+  /* margin-top: -8px; */
+  /* margin-left: 19px; */
+}
+#toggle:checked ~ header .nav-wrapper {
+  left: 0;
+  background: #fff;
+}
+
+label {
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+label span {
+  display: none;
+  height: 5px;
+  width: 30px;
+  background: #000;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+label span:nth-child(1) {
+  margin-left: 20px;
+}
+label span:nth-child(2) {
+  width: 50px;
+}
+/* .nav {
+  margin-bottom: 48px;
+} */
+.nav ul {
+  *zoom: 1;
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+  /* background: #333; */
+}
+.nav ul:before,
+.nav ul:after {
+  content: "";
+  display: table;
+}
+.nav ul:after {
+  clear: both;
+}
+.nav ul > li {
+  float: left;
+  position: relative;
+}
+.nav a {
+  display: block;
+  padding: 10px 20px;
+  line-height: 1.2em;
+  color: #3c3c3c;
+}
+.nav a:hover {
+  text-decoration: none;
+  color: #5d4da8;
+}
+
+.nav li ul li {
+  width: 200px;
+}
+.nav li ul a {
+  border: none;
+}
+.nav li ul a:hover {
+  background: rgba(0, 0, 0, 0.19999999999999996);
+}
+.nav5 ul > li:hover ul {
+  max-height: 1000px;
+  -webkit-transform: perspective(400) rotate3d(0, 0, 0, 0);
+}
+.nav5 li ul {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform-origin: 50% 0;
+  -webkit-transition: 350ms;
+  -moz-transition: 350ms;
+  -o-transition: 350ms;
+  transition: 350ms;
+}
+.nav5 li ul li {
+  background-color: white;
+}
+.background-image-part {
+  background: url(/images/images\ .jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 55vh;
+  margin-top: 80px;
+  opacity: 0.7;
+  /* width: fit-content; */
+}
+.top-text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-left: 5%;
+}
+
+.background-black {
+  display: inline-block;
+  background-color: black;
+  opacity: 0.9;
+  width: fit-content;
+  margin-left: 5%;
+  padding: 2% 3% 0 3%;
+}
+
+.third-ul a {
+  color: white;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding: 5px;
+}
+.hover-white:hover {
+  text-decoration: underline white solid;
+}
+.covid {
+  background: rgb(178, 32, 32);
+}
+.covid:hover {
+  background: red;
+}
+.fa {
+  background-color: white;
+  margin: 2% 0 2% 0;
+  padding: 2%;
+  margin-top: 5%;
+  outline: none;
+  color: grey;
+  border: none;
+
+  width: 75%;
+}
+.inputField1 :focus {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+input {
+  padding-left: 2%;
+  border: none;
+  width: 80%;
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+.Search-button {
+  background-color: purple;
+  padding: 2.2% 8% 2% 8%;
+  color: white;
+  border: none;
+}
+.small-text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  /* padding-right:1%; */
+}
+.ads {
+  text-align: right;
+}
+.tren {
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+}
+.jobb {
+  width: 500px;
+  margin-left: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  bottom:20px;
+}
+.background-black-2 {
+  margin-top:50px;
+  display: inline-block;
+  position: relative;
+  bottom:50px;
+  background-color: black;
+  opacity: 0.9;
+  margin-left:40px;
+  width: 500px;
+}
+.white-background {
+  display: inline-block;
+  margin: 4%;
+  background-color: white;
+  width: 200px;
+}
+.white-background h3,p{
+  font-family: "Poppins", sans-serif;
+  padding:3% 5%;
+}
+.reg{
+  color:#5d4da8;
+}
+.yellow-background{
+  background-color:#F5A623;
+  color:white;
+  line-height:0.7;
+  padding:0;
+}
+.yellow-background h3{
+  font-size: 16px;
+  padding:20px 0 10px 0;
+  text-align: center;
+}
+.yellow-background p{
+  font-size: 12px;
+  padding-bottom:20px;
+  text-align: center;
+}
+.or{
+  color:grey;
+  padding: 10px 0;
+  text-align: center;
+}
+.white-background-2{
+  display: inline-block;
+  background-color: white;
+  /* line-height:2; */
+  width:200px;
+  margin: 4%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  bottom:13px;
+}
+.free{
+  margin:10px;
+  font-size: 18px;
+}
+.onjobs{
+  font-size: 14px;
+
+}
+.no{
+  font-size:12px;
+}
+.create-job{
+  padding:10px;
+  margin:10px 10px 20px 10px;
+  background-color: white;
+  outline-color: #5d4da8;
+  color:#5d4da8;
+  border:#5d4da8;
+  cursor: pointer;
+}
+.create-job:hover{
+  background-color:#5d4da8;
+  color:white;
+}
+.slider{
+  display:grid;
+  height:100px;
+  margin:auto;
+  position: relative;
+  width:80%;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track{
+  display:flex;
+  width:calc(150px * 20);
+  animation:scroll 40% linear infinite;
+}
+@keyframes scroll{
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px*10));
+  }
+}
+.slide{
+  height:120px;
+  width:150px;
+  display:flex;
+  align-items: center;
+  padding:15px;
+  cursor: pointer;
+  padding-top: 0;
+}
+.emp{
+  margin-left:11%;
+  padding-top:30px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size:25px;
+}
+@media only screen and (max-width: 1024px) {
+  .main-nav-link {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 1200px){
+  .background-black-2{
+    margin-left:27%; 
+    margin-top:60px;
+   
+  }
+  /* .emp{
+    margin-top:10%;
+  } */
+  .background-black{
+    margin-left:20%;
+  }
+  .header-container{
+    position:relative;
+  }
+  .background-image-part{
+    height:65vh;
+  }
+}
+@media (max-width: 1450px) {
+  label {
+    display: block;
+  }
+  label span {
+    display: block;
+  }
+  /* .background-image-part{
+    margin-top:15%;
+  } */
+  .nav-wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background: var(--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-wrapper ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+  .nav-wrapper ul li {
+    margin: 10px 0;
+    font-size: 40px;
+    color: #fff;
+  }
+  .nav-wrapper ul li:hover {
+    border: 2px solid black;
+  }
+  .nav5 li ul {
+    z-index: -1;
+    /* float: right; */
+    opacity: 0;
+  }
+  .secondary {
+    border: none;
+  }
+}
+@media (max-width: 618px) {
+  .monster-logo img {
+    margin-left: 30%;
+  }
+}
