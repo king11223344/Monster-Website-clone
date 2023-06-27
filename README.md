@@ -1,6 +1,6 @@
 # Monster Website Clone
 
-![Monster Website Clone](Screenshot (19).png)
+![Screenshot (19)](https://github.com/king11223344/Monster-Website-clone/assets/51441410/4fdc89c7-31b9-4a40-8a6e-c827e58841b1)
 
 This repository contains a static website named Monster Website Clone. The website is built using only HTML and CSS. It is a clone of the original Monster website and serves as a demonstration of recreating the design and layout using basic web technologies.
 
